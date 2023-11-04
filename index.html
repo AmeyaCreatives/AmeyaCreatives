@@ -1,11 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="max-[640px]:mx-5">
+    <header class="flex flex-col justify-center items-center text-white">
+      <div class="container">
+        <nav class="flex items-center justify-between flex-wrap p-6">
+          <div class="flex items-center flex-shrink-0 text-white mr-6">
+            <!-- <svg
+              class="fill-current h-8 w-8 mr-2"
+              width="54"
+              height="54"
+              viewBox="0 0 54 54"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+              />
+            </svg> -->
+            <span class="font-semibold text-xl tracking-tight">Ameya</span>
+          </div>
+          <div class="block lg:hidden">
+            <button
+              class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+            >
+              <svg
+                class="fill-current h-3 w-3"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+            <div class="text-sm lg:flex-grow">
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+              >
+                Events
+              </a>
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+              >
+                About
+              </a>
+              <a
+                href="#responsive-header"
+                class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+              >
+                Work
+              </a>
+            </div>
+            <div>
+              <a
+                href="#"
+                class="inline-block mr-5 text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+                >Contact us</a
+              >
+              <a
+                href="#"
+                class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+                >Register now</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- First section of the page -->
+    <section class="flex flex-col justify-center items-center">
+      <div class="container">
+        <img
+          class="h-screen w-screen object-cover relative text-center text-black"
+          src="asssets/images/background_4.png"
+          alt=""
+        />
+        <div class="absolute top-2/4 left-2/4 s1-d text-white">
+          <h1 class="text-5xl">AMEYA</h1>
+          <span>GAME DEVELOPMENT</span>
+        </div>
+      </div>
+    </section>
+    <!-- events and updates section of the page  -->
+    <section class="flex flex-col justify-center items-center mt-20 text-white">
+      <div class="container">
+        <h1 class="text-center mr-24 text-7xl font-bold pb-10">
+          Events and updates
+        </h1>
+        <div>
+          <p class="w-1/3 max-[768px]:w-full">
+            Join us at the grand inauguration of AMEYA Game Developers and
+            witness the birth of a creative revolution. Be there to celebrate
+            the future of gaming🪩🎊
+          </p>
+          <a href="https://www.google.com/"
+            ><button
+              class="text-base font-bold rounded-3xl py-3 cursor-pointer flex justify-center items-center hover:bg-cyan-300 hover:text-black mt-5 bg-indigo-700 px-3"
+            >
+              Join now
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- About section of the page -->
+    <section class="flex flex-col justify-center items-center mt-20">
+      <div class="container text-white flex flex-col">
+        <span class="text-center mr-24 text-7xl font-bold pb-10">About</span>
+        <div
+          class="flex gap-10 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:items-center"
+        >
+          <div class="w-1/2 flex flex-col gap-3 max-[768px]:w-full">
+            <span class="text-4xl font-bold pb-5 underline"
+              >Club description:</span
+            >
+            <h1>
+              "In every game, the journey begins with a single step." - AMEYA
+            </h1>
+            <p>
+              Welcome to AMEYA, where we transform pixels and code into epic
+              adventures. 🎮
+            </p>
+            <p>
+              🔍 Who We Are A community of innovators, AMEYA is not just a club;
+              it's a universe where games come to life. Led by curiosity and
+              fueled by creativity, we explore uncharted realms in the world of
+              game development.
+            </p>
+          </div>
+          <div class="w-1/2 flex flex-col gap-3 max-[768px]:w-full">
+            <span class="text-4xl font-bold pb-5 underline">Vision</span>
+            <h1>
+              "The future belongs to those who believe in the beauty of their
+              dreams." - Eleanor Roosevelt
+            </h1>
+            <p>
+              Our vision? To craft dreams into digital realities. 🌟 We're
+              passionate about creating engaging, immersive, and memorable
+              gaming experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Work section of the page -->
+    <section class="flex flex-col justify-center items-center text-white mt-20">
+      <div class="container">
+        <h1 class="text-center mr-24 text-7xl font-bold pb-10">Work</h1>
+        <div
+          class="flex gap-10 max-[768px]:flex-col max-[768px]:justify-center max-[768px]:items-center"
+        >
+          <div
+            class="w-1/3 flex flex-col items-center justify-center gap-4 max-[768px]:w-full"
+          >
+            <img src="asssets/images/background_1.png" alt="" />
+            <span class="text-2xl">Presidency days</span>
+            <p>
+              Presidency Days is your portal to the complete university
+              experience. Explore campus, relive cherished memories, and embrace
+              the future. Whether you're a prospective student or an alumnus,
+              embark on a journey through Presidency University, where nostalgia
+              and innovation meet. Join us in redefining how you connect with
+              your educational journey.
+            </p>
+          </div>
+          <div
+            class="w-1/3 flex flex-col items-center justify-center gap-4 max-[768px]:w-full"
+          >
+            <img src="asssets/images/background_1.png" alt="" />
+            <span class="text-2xl">Presidency days</span>
+            <p>
+              Presidency Days is your portal to the complete university
+              experience. Explore campus, relive cherished memories, and embrace
+              the future. Whether you're a prospective student or an alumnus,
+              embark on a journey through Presidency University, where nostalgia
+              and innovation meet. Join us in redefining how you connect with
+              your educational journey.
+            </p>
+          </div>
+          <div
+            class="w-1/3 flex flex-col items-center justify-center gap-4 max-[768px]:w-full"
+          >
+            <img src="asssets/images/background_1.png" alt="" />
+            <span class="text-2xl">Presidency days</span>
+            <p>
+              Presidency Days is your portal to the complete university
+              experience. Explore campus, relive cherished memories, and embrace
+              the future. Whether you're a prospective student or an alumnus,
+              embark on a journey through Presidency University, where nostalgia
+              and innovation meet. Join us in redefining how you connect with
+              your educational journey.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact page of the  -->
+    <section class="flex flex-col justify-center items-center text-white my-20">
+      <div class="container">
+        <h1 class="text-center mr-24 text-7xl font-bold pb-10">Contact us:</h1>
+        <div class="flex flex-col gap-3">
+          <div>
+            <span>Email:</span>
+            <p class="cursor-pointer">AmeyaCreatives@presidencyuniversity.in</p>
+          </div>
+          <div>
+            <span>Faculty Coordinator:</span>
+            <a
+              href="mailto:bhuvaneshwari.pv@presidencyuniversity.in?subject=Your%20Subject&body=Your%20Message%20Here"
+            >
+              <p class="cursor-pointer">
+                bhuvaneshwari.pv@presidencyuniversity.in
+              </p></a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- registration section -->
+    <section
+      class="flex flex-col justify-center items-end mt-20 text-white max-[768px]:items-center"
+    >
+      <div class="container w-1/3 max-[768px]:w-full">
+        <h1 class="text-center mr-24 text-7xl font-bold pb-10">Register now</h1>
+        <p>
+          Explore limitless opportunities in gaming, design, management, and
+          more. Enroll now to shape the future with AMEYA Game Developers!
+        </p>
+        <p>Register now 👇</p>
+
+        <a href="https://www.google.com/"
+          ><button
+            class="text-base font-bold py-3 rounded-3xl placeholder-opacity-30 cursor-pointer flex justify-center items-center hover:bg-cyan-300 hover:text-black mt-5 bg-indigo-700 px-3"
+          >
+            register now
+          </button></a
+        >
+      </div>
+    </section>
+  </body>
 </html>

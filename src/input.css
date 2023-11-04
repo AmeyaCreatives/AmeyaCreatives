@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+s1-d {
+  transform: translate(-50%, -50%);
+}
+
+body{
+  background-color: #0e101c;
+}
+.head-bg{
+  background-color: #0e101c;
+}
