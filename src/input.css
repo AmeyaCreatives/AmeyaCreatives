@@ -2,19 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-s1-d {
-  transform: translate(-50%, -50%);
-}
-
-body{
+body {
   background-color: #0e101c;
 }
-.head-bg{
+.head-bg {
   background-color: #0e101c;
 }
 
-.s1-img{
-  @media (max-width:1024px) {
+.s1-img {
+  @media (max-width: 1024px) {
     margin-top: -150px;
     margin-bottom: -150px;
   }
@@ -22,8 +18,20 @@ body{
     margin-top: -250px;
     margin-bottom: -250px;
   } */
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     margin-top: -300px;
     margin-bottom: -250px;
+  }
+}
+
+.s1-div {
+  @media (max-width: 640px) {
+    top: 40%;
+  }
+  @media (max-width: 500px) {
+    left: 40%;
+  }
+  @media (max-width: 400px) {
+    top: 35%;
   }
 }
