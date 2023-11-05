@@ -576,17 +576,17 @@ video {
   position: relative;
 }
 
-.left-2\/4 {
-  left: 50%;
-}
-
-.top-2\/4 {
-  top: 50%;
-}
-
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
 }
 
 .mr-2 {
@@ -719,6 +719,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .rounded {
@@ -891,18 +895,6 @@ body {
   }
 }
 
-.s1-div {
-  @media (max-width: 640px) {
-    top: 40%;
-  }
-  @media (max-width: 500px) {
-    left: 40%;
-  }
-  @media (max-width: 400px) {
-    top: 35%;
-  }
-}
-
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -938,6 +930,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .max-\[768px\]\:m-0 {
+    margin: 0px;
+  }
+
   .max-\[768px\]\:mt-1 {
     margin-top: 0.25rem;
   }
@@ -961,12 +957,32 @@ body {
   .max-\[768px\]\:justify-center {
     justify-content: center;
   }
+
+  .max-\[768px\]\:self-center {
+    align-self: center;
+  }
 }
 
 @media (max-width: 640px) {
   .max-\[640px\]\:mx-5 {
     margin-left: 1.25rem;
     margin-right: 1.25rem;
+  }
+
+  .max-\[640px\]\:flex {
+    display: flex;
+  }
+
+  .max-\[640px\]\:flex-col {
+    flex-direction: column;
+  }
+
+  .max-\[640px\]\:items-center {
+    align-items: center;
+  }
+
+  .max-\[640px\]\:justify-center {
+    justify-content: center;
   }
 
   .max-\[640px\]\:text-5xl {
@@ -979,6 +995,11 @@ body {
   .max-\[468px\]\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .max-\[468px\]\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 

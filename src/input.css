@@ -23,15 +23,3 @@ body {
     margin-bottom: -250px;
   }
 }
-
-.s1-div {
-  @media (max-width: 640px) {
-    top: 40%;
-  }
-  @media (max-width: 500px) {
-    left: 40%;
-  }
-  @media (max-width: 400px) {
-    top: 35%;
-  }
-}
